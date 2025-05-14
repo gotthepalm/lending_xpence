@@ -1,0 +1,109 @@
+header {
+    position: sticky;
+    top: 0px;
+    background: #fff;
+    z-index: 1;
+}
+.hdr_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 57px;
+    padding-bottom: 20px;
+}
+.header_logo__img {
+    height: 52px;
+}
+.hdr_nav {
+    display: flex;
+    gap: 0px 40px;
+}
+.hdr__button,
+.mobile_menu__btn {
+    border: 1px solid  var(--color-orange);
+    color: var(--color-orange);
+    padding: 0px 21px;
+    border-radius: 10px;
+    height: 64px;
+    line-height: 64px;
+}
+.hdr__button:hover,
+.mobile_menu__btn:hover {
+    background-color:  var(--color-orange);
+    color: var(--color-white)
+}
+.hdr_nav__el,
+.mobile_menu__el {
+    text-wrap: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.hdr_nav__el:hover,
+.mobile_menu__el:hover {
+    border-bottom: 2px solid black;
+}
+.hdr_burger,
+.hdr_burger__img {
+    display: none;
+    /* position: absolute; */
+    cursor: pointer;
+    z-index: 2;
+}
+
+.mobile_menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    max-width: 100dvw;
+    width: 100%;
+    background-color: var(--color-white);
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px 0px;
+    align-items: center;
+    transition: all 0.7s ease-in-out;
+}
+.mobile_menu:not(.active) {
+    transform: translateX(+100dvw);
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    max-width: 100dvw;
+    width: 100%;
+    z-index: 3;
+    background-color: #0000003b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.popup_window {
+    background-color: var(--color-white);
+    height: 500px;
+    max-width: 700px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popup_close {
+    align-self: flex-end;
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    cursor: pointer;
+}
+.popup:not(.popup_active) {
+    display: none;
+}

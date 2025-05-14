@@ -1,0 +1,27 @@
+html {
+    font-family: Hind Siliguri;
+}
+body {
+    margin: 0px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.base_btn  {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.container_main,
+.container_header,
+.container_footer {
+    margin: 0px auto;
+    max-width: 1460px;
+    width: 100%;
+    padding: 0px 20px;
+}
